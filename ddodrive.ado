@@ -18,7 +18,7 @@ program ddodrive
 	
 	// download the google docs as text
 
-	copy "https://www.dropbox.com/scl/fi/export?format=txt&id=`uzidxkps14zm3uzx75rqg/code.gdoc?dl=0&rlkey=slyrto1v6m6q53eicayatcu1e'" `txtfile', replace text
+	copy "https://www.dropbox.com/scl/fi/export?format=txt&id=`gtoken'" `txtfile', replace text
 
 	// get rid of the first three chars
 	file open `inhandle' using `txtfile', read binary
